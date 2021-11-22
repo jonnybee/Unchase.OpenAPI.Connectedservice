@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="Unchase.OpenAPI.ConnectedService2022.0c3425d1-1bd2-4b05-840e-4c046d2de664" Version="1.0" Language="en-US" Publisher="Jonny Bekkum" />
+        <DisplayName>Unchase.OpenAPI.ConnectedService2022</DisplayName>
+        <Description xml:space="preserve">Connected service for Visual Studio to generate OpenAPI (Swagger) web service reference.</Description>
+        <MoreInfo>https://github.com/unchase/Unchase.OpenAPI.Connectedservice</MoreInfo>
+        <License>EULA.txt</License>
+        <GettingStartedGuide>https://github.com/unchase/Unchase.OpenAPI.Connectedservice/blob/master/README.md</GettingStartedGuide>
+        <ReleaseNotes>https://github.com/unchase/Unchase.OpenAPI.Connectedservice/blob/master/CHANGELOG.md</ReleaseNotes>
+        <Icon>logo_128x128.png</Icon>
+        <PreviewImage>preview_200x200.png</PreviewImage>
+        <Tags>OpenAPI, Swagger, REST API, OAS, OAI, Web API, .NET Core, HttpClient, Swashbuckle, NSwag, NSwagStudio, Code Generation, Scaffolding, Connected Service</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>

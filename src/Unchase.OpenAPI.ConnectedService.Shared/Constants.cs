@@ -48,7 +48,9 @@
             "Version=v1.0",
             "Version=v1.1",
             "Version=v1.2",
-            "Version=v1.3"
+            "Version=v1.3",
+            "Version=v2.0",
+            "Version=v2.1"
         };
     }
 }

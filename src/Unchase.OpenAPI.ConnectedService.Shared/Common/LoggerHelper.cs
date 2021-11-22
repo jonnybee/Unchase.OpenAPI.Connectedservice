@@ -45,6 +45,7 @@ namespace Unchase.OpenAPI.ConnectedService.Common
         {
             if (ex != null)
             {
+                ThreadHelper.ThrowIfNotOnUIThread();
                 Log(ex.ToString());
             }
         }

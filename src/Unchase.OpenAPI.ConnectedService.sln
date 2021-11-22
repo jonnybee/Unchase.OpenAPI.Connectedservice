@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.489
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unchase.OpenAPI.ConnectedService", "Unchase.OpenAPI.ConnectedService.csproj", "{CFB451DE-8645-4125-8254-3C3BEB6C6CC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unchase.OpenAPI.ConnectedService", "Unchase.OpenAPI.ConnectedService\Unchase.OpenAPI.ConnectedService.csproj", "{CFB451DE-8645-4125-8254-3C3BEB6C6CC7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E792B87-132B-4E5F-B542-86E96D18FAD8}"
 	ProjectSection(SolutionItems) = preProject
@@ -29,22 +29,55 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{FEC756D6-331
 		..\img\UnchaseOpenAPIConnectedServiceCommandsOptions2.png = ..\img\UnchaseOpenAPIConnectedServiceCommandsOptions2.png
 	EndProjectSection
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Unchase.OpenAPI.ConnectedService.Shared", "Unchase.OpenAPI.ConnectedService.Shared\Unchase.OpenAPI.ConnectedService.Shared.shproj", "{E906842D-C9D5-4C1D-B9F7-16C5AF63030C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{41361BA8-6ADB-4B60-A732-5D5A91F1C70B}"
+	ProjectSection(SolutionItems) = preProject
+		..\resources\EULA.txt = ..\resources\EULA.txt
+		..\resources\favicon.ico = ..\resources\favicon.ico
+		..\resources\logo_128x128.png = ..\resources\logo_128x128.png
+		..\resources\NewBug.png = ..\resources\NewBug.png
+		..\resources\preview_200x200.png = ..\resources\preview_200x200.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unchase.OpenAPI.ConnectedService2022", "Unchase.OpenAPI.ConnectedService2022\Unchase.OpenAPI.ConnectedService2022.csproj", "{5932EF74-5C13-4C4F-A4EE-77DD699064F9}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Unchase.OpenAPI.ConnectedService.Shared\Unchase.OpenAPI.ConnectedService.Shared.projitems*{5932ef74-5c13-4c4f-a4ee-77dd699064f9}*SharedItemsImports = 4
+		Unchase.OpenAPI.ConnectedService.Shared\Unchase.OpenAPI.ConnectedService.Shared.projitems*{cfb451de-8645-4125-8254-3c3beb6c6cc7}*SharedItemsImports = 4
+		Unchase.OpenAPI.ConnectedService.Shared\Unchase.OpenAPI.ConnectedService.Shared.projitems*{e906842d-c9d5-4c1d-b9f7-16c5af63030c}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CFB451DE-8645-4125-8254-3C3BEB6C6CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CFB451DE-8645-4125-8254-3C3BEB6C6CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB451DE-8645-4125-8254-3C3BEB6C6CC7}.Debug|x86.ActiveCfg = Debug|x86
+		{CFB451DE-8645-4125-8254-3C3BEB6C6CC7}.Debug|x86.Build.0 = Debug|x86
 		{CFB451DE-8645-4125-8254-3C3BEB6C6CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFB451DE-8645-4125-8254-3C3BEB6C6CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB451DE-8645-4125-8254-3C3BEB6C6CC7}.Release|x86.ActiveCfg = Release|x86
+		{CFB451DE-8645-4125-8254-3C3BEB6C6CC7}.Release|x86.Build.0 = Release|x86
+		{5932EF74-5C13-4C4F-A4EE-77DD699064F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5932EF74-5C13-4C4F-A4EE-77DD699064F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5932EF74-5C13-4C4F-A4EE-77DD699064F9}.Debug|x86.ActiveCfg = Debug|x86
+		{5932EF74-5C13-4C4F-A4EE-77DD699064F9}.Debug|x86.Build.0 = Debug|x86
+		{5932EF74-5C13-4C4F-A4EE-77DD699064F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5932EF74-5C13-4C4F-A4EE-77DD699064F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5932EF74-5C13-4C4F-A4EE-77DD699064F9}.Release|x86.ActiveCfg = Release|x86
+		{5932EF74-5C13-4C4F-A4EE-77DD699064F9}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FEC756D6-3315-4914-B04F-B2CEA3F6A7F6} = {2E792B87-132B-4E5F-B542-86E96D18FAD8}
+		{41361BA8-6ADB-4B60-A732-5D5A91F1C70B} = {2E792B87-132B-4E5F-B542-86E96D18FAD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B99E5F0C-212D-446A-AC93-89C7351C326D}

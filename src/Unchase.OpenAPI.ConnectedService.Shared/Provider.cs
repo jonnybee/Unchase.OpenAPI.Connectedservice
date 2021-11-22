@@ -5,7 +5,11 @@ using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media.Imaging;
 using Microsoft.VisualStudio.ConnectedServices;
+#if VS2022
+using Unchase.OpenAPI.ConnectedService2022.Properties;
+#else 
 using Unchase.OpenAPI.ConnectedService.Properties;
+#endif
 
 namespace Unchase.OpenAPI.ConnectedService
 {

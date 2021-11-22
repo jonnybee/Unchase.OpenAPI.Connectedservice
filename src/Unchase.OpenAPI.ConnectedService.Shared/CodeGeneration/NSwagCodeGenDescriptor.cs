@@ -6,15 +6,15 @@
 // <author>Nickolay Chebotov (Unchase), spiritkola@hotmail.com</author>
 //-----------------------------------------------------------------------
 
-using System;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.VisualStudio.ConnectedServices;
 using NSwag.Commands;
 using NSwag.Commands.Generation;
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 using Unchase.OpenAPI.ConnectedService.Common;
 using Unchase.OpenAPI.ConnectedService.Views;
 
@@ -24,7 +24,10 @@ namespace Unchase.OpenAPI.ConnectedService.CodeGeneration
     {
         #region Constructors
 
-        public NSwagCodeGenDescriptor(ConnectedServiceHandlerContext context, Instance serviceInstance) : base(context, serviceInstance) { }
+        public NSwagCodeGenDescriptor(ConnectedServiceHandlerContext context, Instance serviceInstance) : base(context, serviceInstance)
+        {
+            Microsoft.VisualStudio.Shell.ThreadHelper.ThrowIfNotOnUIThread();
+        }
 
         #endregion
 

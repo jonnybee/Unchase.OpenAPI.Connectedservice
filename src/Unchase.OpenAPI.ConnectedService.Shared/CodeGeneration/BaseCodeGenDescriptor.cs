@@ -39,6 +39,7 @@ namespace Unchase.OpenAPI.ConnectedService.CodeGeneration
 
         protected BaseCodeGenDescriptor(ConnectedServiceHandlerContext context, Instance serviceInstance)
         {
+            Microsoft.VisualStudio.Shell.ThreadHelper.ThrowIfNotOnUIThread();
             this.InitNuGetInstaller();
 
             this.Instance = serviceInstance;

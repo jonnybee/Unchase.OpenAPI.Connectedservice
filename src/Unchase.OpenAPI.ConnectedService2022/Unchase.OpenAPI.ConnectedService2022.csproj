@@ -99,7 +99,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <None Include="Resources\NewBug.png" />
+    <Content Include="resources\NewBug.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <EmbeddedResource Include="..\..\resources\logo_128x128.png">
       <Link>logo_128x128.png</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

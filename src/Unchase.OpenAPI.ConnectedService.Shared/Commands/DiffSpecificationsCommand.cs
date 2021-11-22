@@ -145,6 +145,8 @@ namespace Unchase.OpenAPI.ConnectedService.Commands
 
         private bool CanSpecificationFileAndSourceBeCompared(out string file1, out string file2)
         {
+            Microsoft.VisualStudio.Shell.ThreadHelper.ThrowIfNotOnUIThread();
+
             var items = GetSelectedFiles().ToList();
             file1 = items.ElementAtOrDefault(0);
             file2 = items.ElementAtOrDefault(1) ?? GetSpecificationFromSource();
